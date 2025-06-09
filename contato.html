@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Sua Loja de Eletrônicos</title>
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">TechStore</a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                        <li><a href="javascript:void(0)" class="nav-link active">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="contact-form">
+                <h2 style="color: #667eea; margin-bottom: 2rem; text-align: center;">Entre em Contato</h2>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assunto">Assunto:</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="duvida">Dúvida sobre produto</option>
+                            <option value="suporte">Suporte técnico</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem aqui..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" required style="width: auto; margin-right: 0.5rem;">
+                            Concordo com os termos de uso e política de privacidade
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" style="width: auto; margin-right: 0.5rem;">
+                            Desejo receber ofertas e novidades por e-mail
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); margin-top: 2rem;">
+                <h3 style="color: #667eea; margin-bottom: 1.5rem;">Informações de Contato</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div>
+                        <h4 style="color: #333; margin-bottom: 1rem;">📞 Telefone</h4>
+                        <p>(21) 1234-5678<br>(21) 91234-5678 (WhatsApp)</p>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: #333; margin-bottom: 1rem;">✉️ E-mail</h4>
+                        <p>contato@techstore.com.br<br>suporte@techstore.com.br</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechStore</h3>
+                    <p>Sua loja de confiança para produtos eletrônicos de qualidade.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="javascript:void(0)">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Notebooks</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copy">
+                <p>&copy; 2025 TechStore. Todos os direitos reservados.</p>
+                <p class="p2">Desenvolvido para trabalho acadêmico - Por Lucas Deano</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
