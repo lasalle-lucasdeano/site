@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
-    <header>
+    <header class="no-background">
         <div class="container">
             <div class="header-content">
                 <a href="javascript:void(0)" class="logo">TechStore</a>
                 <nav>
                     <ul>
                         <li><a href="javascript:void(0)" class="nav-link active">Início</a></li>
+                        <li><a href="index.html#products" class="nav-link">Produtos</a></li>
                         <li><a href="sobre.html" class="nav-link">Sobre</a></li>
                         <li><a href="contato.html" class="nav-link">Contato</a></li>
                     </ul>
@@ -191,5 +192,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const header = document.querySelector('header');
+        const hero = document.querySelector('.hero');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const heroBottom = hero.offsetTop + hero.offsetHeight;
+
+            if (scrollTop > heroBottom) {
+                header.classList.remove('no-background');
+                header.classList.add('background');
+            }
+            else {
+                header.classList.add('no-background');
+                header.classList.remove('background');
+            }
+        });
+  </script>
 </body>
 </html>
